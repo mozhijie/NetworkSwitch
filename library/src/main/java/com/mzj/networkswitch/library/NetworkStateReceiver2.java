@@ -17,7 +17,6 @@ public class NetworkStateReceiver2 extends BroadcastReceiver {
     private NetworkChangeObserver networkChangeObserver;
 
     public NetworkStateReceiver2() {
-        // 初始化
         this.networkType = NetworkType.NONE;
     }
 

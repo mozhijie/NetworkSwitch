@@ -18,7 +18,7 @@ public class App extends Application {
         // 广播方式二
 //        NetworkManager2.getDefault().init(this);
         // ------ 广播方式 end------
-
+        // 推荐
         NetworkManager3.getDefault().init(this);
     }
 
