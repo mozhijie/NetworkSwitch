@@ -14,16 +14,12 @@ public class App extends Application {
         // 初始化NetworkManager
         // ------ 广播方式------
         // 广播方式一
-        NetworkManager.getDefault().init(this);
+//        NetworkManager.getDefault().init(this);
         // 广播方式二
 //        NetworkManager2.getDefault().init(this);
         // ------ 广播方式 end------
-        /**
-         * 运行该示例
-         * 需取消注释 App-NetworkManager3 和 AndroidManifest-NetworkStateReceiver
-         * 注释 App-NetworkManager、NetworkManager2 和 AndroidManifest-NetworkStateReceiver2
-         */
-//        NetworkManager3.getDefault().init(this);
+
+        NetworkManager3.getDefault().init(this);
     }
 
 }

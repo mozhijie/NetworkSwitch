@@ -19,10 +19,10 @@ public class NetworkManager3 {
     private static volatile NetworkManager3 instance;
     private Application application;
 
-    private NetworkStateReceiver networkStateReceiver;
+    private NetworkStateReceiver3 networkStateReceiver3;
 
     private NetworkManager3() {
-        networkStateReceiver = new NetworkStateReceiver();
+        networkStateReceiver3 = new NetworkStateReceiver3();
     }
 
     public static NetworkManager3 getDefault() {
@@ -58,8 +58,12 @@ public class NetworkManager3 {
             // 动态注册广播
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction(Constants.ANDROID_NET_CHANGE_ACTION);
-            application.registerReceiver(networkStateReceiver, intentFilter);
+            application.registerReceiver(networkStateReceiver3, intentFilter);
         }
+    }
+
+    public void register(Object object) {
+        networkStateReceiver3.register(object);
     }
 
 }

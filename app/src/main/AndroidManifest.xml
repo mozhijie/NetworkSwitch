@@ -26,17 +26,23 @@
         </activity>
         <activity android:name=".FirstActivity" />
         <activity android:name=".SecondActivity" />
+        <activity android:name=".ThreeActivity" />
 
-        <receiver android:name=".library.NetworkStateReceiver">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
+<!--        <receiver android:name=".library.NetworkStateReceiver">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
         <!--<receiver android:name=".library.NetworkStateReceiver2">-->
             <!--<intent-filter>-->
                 <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
             <!--</intent-filter>-->
         <!--</receiver>-->
+        <receiver android:name=".library.NetworkStateReceiver3">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
