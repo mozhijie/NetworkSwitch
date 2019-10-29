@@ -20,7 +20,7 @@ public class NetworkUtils {
         }
         // 获取所有网络信息
         NetworkInfo[] allNetworkInfo = connectivityManager.getAllNetworkInfo();
-        if (allNetworkInfo != null) {
+        if (allNetworkInfo.length > 0) {
             for (NetworkInfo networkInfo : allNetworkInfo) {
                 if (networkInfo.getState() == NetworkInfo.State.CONNECTED) {
                     return true;
