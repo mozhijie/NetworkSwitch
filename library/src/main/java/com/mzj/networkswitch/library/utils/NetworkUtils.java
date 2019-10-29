@@ -14,8 +14,7 @@ public class NetworkUtils {
      * 网络是否可用
      */
     @SuppressLint("MissingPermission")
-    public static boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) NetworkManager.getDefault().getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
+    public static boolean isNetworkAvailable(ConnectivityManager connectivityManager) {
         if (connectivityManager == null) {
             return false;
         }
@@ -35,8 +34,7 @@ public class NetworkUtils {
      * 获取网络类型
      */
     @SuppressLint("MissingPermission")
-    public static NetworkType getNetworkType() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) NetworkManager.getDefault().getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
+    public static NetworkType getNetworkType(ConnectivityManager connectivityManager) {
         if (connectivityManager == null) {
             return NetworkType.NONE;
         }

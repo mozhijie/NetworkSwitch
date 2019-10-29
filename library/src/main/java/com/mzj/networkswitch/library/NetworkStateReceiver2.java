@@ -3,12 +3,13 @@ package com.mzj.networkswitch.library;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.util.Log;
 
 import com.mzj.networkswitch.library.listener.NetworkChangeObserver;
 import com.mzj.networkswitch.library.type.NetworkType;
 import com.mzj.networkswitch.library.utils.Constants;
-import com.mzj.networkswitch.library.utils.NetworkUtils2;
+import com.mzj.networkswitch.library.utils.NetworkUtils;
 
 public class NetworkStateReceiver2 extends BroadcastReceiver {
 
@@ -33,8 +34,9 @@ public class NetworkStateReceiver2 extends BroadcastReceiver {
         // 处理广播的事件
         if (intent.getAction().equalsIgnoreCase(Constants.ANDROID_NET_CHANGE_ACTION)) {
             Log.e(Constants.LOG_TAG, "网络发生变化");
-            networkType = NetworkUtils2.getNetworkType();
-            if (NetworkUtils2.isNetworkAvailable()) {
+            ConnectivityManager connectivityManager = (ConnectivityManager) NetworkManager2.getDefault().getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
+            networkType = NetworkUtils.getNetworkType(connectivityManager);
+            if (NetworkUtils.isNetworkAvailable(connectivityManager)) {
                 Log.e(Constants.LOG_TAG, "网络连接成功");
                 if (networkChangeObserver != null) {
                     networkChangeObserver.onConnect(networkType);
