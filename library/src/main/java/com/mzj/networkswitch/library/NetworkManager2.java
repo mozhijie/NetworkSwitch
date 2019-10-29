@@ -46,7 +46,7 @@ public class NetworkManager2 {
         application.registerReceiver(networkStateReceiver2, intentFilter);
     }
 
-    public void setNetworkStateReceiver2(NetworkChangeObserver networkChangeObserver) {
+    public void setNetworkChangeObserver(NetworkChangeObserver networkChangeObserver) {
         this.networkStateReceiver2.setNetworkChangeObserver(networkChangeObserver);
     }
 

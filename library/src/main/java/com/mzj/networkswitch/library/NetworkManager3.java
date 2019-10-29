@@ -38,7 +38,7 @@ public class NetworkManager3 {
 
     public Application getApplication() {
         if (application == null) {
-            throw new RuntimeException("NetworkManager的Application为空");
+            throw new RuntimeException("NetworkManager3的Application为空");
         }
         return application;
     }

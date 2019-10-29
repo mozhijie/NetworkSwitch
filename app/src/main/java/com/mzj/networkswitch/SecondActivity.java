@@ -22,7 +22,7 @@ public class SecondActivity extends AppCompatActivity implements NetworkChangeOb
 
         textView = findViewById(R.id.textView);
 
-        NetworkManager2.getDefault().setNetworkStateReceiver2(this);
+        NetworkManager2.getDefault().setNetworkChangeObserver(this);
     }
 
     @Override

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         /**
-         * 运行该实例
+         * 运行该示例
          * 需取消注释App-NetworkManager和AndroidManifest-NetworkStateReceiver
          * 注释App-NetworkManager2、NetworkManager3和AndroidManifest-NetworkStateReceiver2
          */
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /**
-         * 运行该实例
+         * 运行该示例
          * 需取消注释App-NetworkManager2和AndroidManifest-NetworkStateReceiver2
          * 注释App-NetworkManager、NetworkManager3和AndroidManifest-NetworkStateReceiver
          */

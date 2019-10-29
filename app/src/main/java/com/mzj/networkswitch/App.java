@@ -19,7 +19,7 @@ public class App extends Application {
 //        NetworkManager2.getDefault().init(this);
         // ------ 广播方式 end------
         /**
-         * 运行该实例
+         * 运行该示例
          * 需取消注释App-NetworkManager3和AndroidManifest-NetworkStateReceiver
          * 注释App-NetworkManager、NetworkManager2和AndroidManifest-NetworkStateReceiver2
          */
