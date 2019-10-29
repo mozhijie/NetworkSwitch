@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         /**
          * 运行该示例
-         * 需取消注释App-NetworkManager和AndroidManifest-NetworkStateReceiver
-         * 注释App-NetworkManager2、NetworkManager3和AndroidManifest-NetworkStateReceiver2
+         * 需取消注释 App-NetworkManager 和 AndroidManifest-NetworkStateReceiver
+         * 注释 App-NetworkManager2、NetworkManager3 和 AndroidManifest-NetworkStateReceiver2
          */
         findViewById(R.id.btn_first).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         });
         /**
          * 运行该示例
-         * 需取消注释App-NetworkManager2和AndroidManifest-NetworkStateReceiver2
-         * 注释App-NetworkManager、NetworkManager3和AndroidManifest-NetworkStateReceiver
+         * 需取消注释 App-NetworkManager2 和 AndroidManifest-NetworkStateReceiver2
+         * 注释 App-NetworkManager、NetworkManager3 和 AndroidManifest-NetworkStateReceiver
          */
         findViewById(R.id.btn_second).setOnClickListener(new View.OnClickListener() {
             @Override

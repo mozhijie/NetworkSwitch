@@ -20,8 +20,8 @@ public class App extends Application {
         // ------ 广播方式 end------
         /**
          * 运行该示例
-         * 需取消注释App-NetworkManager3和AndroidManifest-NetworkStateReceiver
-         * 注释App-NetworkManager、NetworkManager2和AndroidManifest-NetworkStateReceiver2
+         * 需取消注释 App-NetworkManager3 和 AndroidManifest-NetworkStateReceiver
+         * 注释 App-NetworkManager、NetworkManager2 和 AndroidManifest-NetworkStateReceiver2
          */
 //        NetworkManager3.getDefault().init(this);
     }
