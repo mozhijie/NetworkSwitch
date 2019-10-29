@@ -32,14 +32,14 @@ public class ThreeActivity extends AppCompatActivity {
     public void network(NetworkType networkType) {
         switch (networkType) {
             case WIFI:
-                Log.e("FirstActivity", "WIFI");
+                Log.e("ThreeActivity", "WIFI");
                 break;
             case CMNET:
             case CMWAP:
-                Log.e("FirstActivity", networkType.name());
+                Log.e("ThreeActivity", networkType.name());
                 break;
             case NONE:
-                Log.e("FirstActivity", "NONE");
+                Log.e("ThreeActivity", "NONE");
                 break;
         }
         textView.setText(networkType.name());
